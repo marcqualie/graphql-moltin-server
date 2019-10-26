@@ -4,7 +4,9 @@ import orderMutationResolvers from './mutations/orders'
 
 import cartQueryResolvers from './queries/cart'
 import brandQueryResolvers from './queries/brands'
+import categoryQueryResolvers from './queries/categories'
 import productQueryResolvers from './queries/products'
+
 import rootQueryResolvers from './root'
 
 export default {
@@ -17,6 +19,7 @@ export default {
   Query: {
     ...brandQueryResolvers,
     ...cartQueryResolvers,
+    ...categoryQueryResolvers,
     ...productQueryResolvers,
   },
 }
